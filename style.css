@@ -1,0 +1,38 @@
+p{
+    padding: 4px;
+    float: right;
+    background-color:beige;
+    font-size: x-large;
+    margin-right: 80%;
+}
+h1{
+    margin: 4px;
+    text-transform: uppercase;
+    float: left;;
+    size: 29px;
+}
+nav{
+    background-color: rgb(209, 151, 64);
+    color: black;
+    padding: 10px;
+    border: 20px;
+}
+body{
+    margin: 100px;
+}
+img{
+    float: top;
+    margin-bottom: 5%;
+}
+form{
+    padding: 9px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+h2{
+    padding: 9px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+}
