@@ -13,7 +13,7 @@ h1{
     text-align: center;
     font-size: 40px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-decoration: underline;
+    text-decoration: none;
 }
 .nav{
     background-color:rgb(190, 190, 190);
@@ -26,21 +26,26 @@ body{
     background-color:darkgrey;
 }
 img{
-    float: right;
-    margin-bottom: 5%;
+   width: 400px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
 }
-form{
-    padding: 90px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-}
-h2{
+h3{
     padding: 19px;
     text-align: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    text-decoration: underline;
+    text-decoration:none;
+    margin-top: 50px;
+    font-size: 40px;
+}
+h2{
+    font-size: 40px;
+    padding: 19px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
     margin-top: 50px;
 }
 a{
@@ -52,11 +57,13 @@ a{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 button{
-    background-color:rgba(163, 117, 84, 0.438);
-    color: black;
+ margin-left: 40%;
+ width: 200px;
     
 }
-
+button:hover{
+    background-color: grey;
+}
 .nav2{
     padding: 30px;
     background-color: rgb(177, 177, 177);
@@ -76,4 +83,47 @@ button{
 .navv2:hover{
     color: dimgray;
     font-size: 35px;
+}
+nav:hover{
+    background-color: whitesmoke;
+}
+.h1{
+    text-align: center;
+    margin-top: 40%;
+}
+input{
+    height: 40px;
+    width: 400px;
+    margin-left: 32%;
+}
+#message{
+    height: 40px;
+    width: 400px;
+    margin-left: 32%;
+}
+.image{
+    float: left;
+    padding: 20px;
+}
+.image2{
+    float: right;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+.ap{
+    text-align: end;
+    float: left;
+    
+}
+.aap{
+    float: right;
+}
+.contact-container{
+    align-items: center;
+    width: 50vw;
+}
+.contact-container form{
+    position: relative;
+    left: 50px;
+
 }
