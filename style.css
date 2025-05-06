@@ -21,18 +21,115 @@ h1{
     background-color: rgb(163, 163, 163);
     margin: 70px;
 }
-.nav{
+.intro{
+    align-items: center;
+    margin-right: 2rem;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: #e3f2fd;
+    position: relative;
+    top: 30px;
+   
+  }
+.h1{
+    text-align: center;
+}
+.navbar {
     display: flex;
-    justify-content: center;
-    background-color:rgb(190, 190, 190);
-    color: black;
-    /* border: 20px; */
-}
-@media( max-width: 650px){
-    .hamburger{
-        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+  
+  
+  .nav-links a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    text-align: center;
+    position: relative;
+    top: 10px;
+  }
+  .nav-links ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+  .logo{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    color: #ffffff;
+    font-size: 17px;
+    position: relative;
+    bottom: 8px;
+  }
+  .nav-links a:hover {
+    color: #1abc9c;
+    font-family: 'Lobster', cursive;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #108f75;
+    margin: 0 auto;
+    margin-top: 5px;  
+    transition: width 0.3s ease;
+    display: block;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links ul {
+      display: none;
+      flex-direction: column;
+      background-color: #333c46;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      width: 200px;
     }
-}
+  
+    .nav.active {
+      display: flex;
+    }
+  
+    .hamburger {
+      display: flex;
+      position: relative;
+      right: 50px;
+      flex-direction: column;
+      cursor: pointer;
+    }
+  
+    .hamburger span {
+      background: #fff;
+      height: 3px;
+      width: 25px;
+      margin: 4px;
+      border-radius: 3px;
+    }
+  
+  }
 body{
     /* margin: 100px; */
     background-color:darkgrey;
@@ -58,13 +155,13 @@ h2{
     margin-top: 50px;
 }
 a{
-    color: rgb(0, 0, 0);
+    color: #fff;
+    margin: 0 1rem;
     text-decoration: none;
-    margin: 2%;
-    padding: 15px;
-    font-size: 30px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 500;
+    transition: color 0.3s ease;
     text-align: center;
+    position: relative;
 }
 button{
     margin-left: 40%;
@@ -77,6 +174,7 @@ button:hover{
 .nav2{
     background-color: rgb(177, 177, 177);
     text-align: center;
+    font-size: 40px;
     
 }
 .nav2:hover{
@@ -85,14 +183,6 @@ button:hover{
    width: 0;
    height: 2px;
    transition: width 0.3s;
-    
-}
-nav:hover{
-    content: '';
-    display: block;
-    width: 0;
-    height: 2px;
-    transition:width 0.3x ;
     
 }
 input{
@@ -139,28 +229,10 @@ form{
     margin: 25%;
     border: 30px;
 }
-ul{
-    display: flex;
-    list-style: none;
 
-}
-a:hover{
-    text-decoration: underline chocolate 6px;
-}
+
 .ww{
     display: flex;
-}
-
-.hamburger span{
-    height: 3px;
-    width: 25px;
-    color: chocolate;
-    flex-direction: column;
-    gap: 5px;
-    display: none;
-}
-.nav ul{
-    display: none;
 }
 .service{
     display: flex;
