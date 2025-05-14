@@ -93,7 +93,14 @@ h1{
     transition: width 0.3s ease;
     display: block;
   }
-  
+  .contact{
+    align-items: center;
+    display: flex;
+    border: 5px;
+    padding: 15%;
+    margin: 100px;
+    gap: 30px;
+  }
   .nav-links a:hover::after {
     width: 100%;
   }
@@ -424,7 +431,7 @@ button:hover{
   background-position-y: initial;
   background-size: initial;
   background-repeat-x: initial;
-  background-repeat-y: initial;
+  background-repeat: initial;
   background-attachment: initial;
   background-origin: initial;
   background-clip: initial;

@@ -15,3 +15,4 @@ function typp(){
         setTimeout(typp,200);
     }
 }
+typp();
