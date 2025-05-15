@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      
+/* .BMI-Calculator{
+  display: block;
+
+}
+.container{
+    justify-content: center;
+} */
+ .BMI-Calculator {
+  /* background: linear-gradient(135deg, #f0f4f8, #d9e2ec); */
+  padding: 40px 0;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.BMI-Calculator .container {
+  max-width: 400px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 1px solid black;
+}
+
+.BMI-Calculator h2 {
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 28px;
+}
+
+.BMI-Calculator input[type="number"] {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.BMI-Calculator input[type="number"]:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+.BMI-Calculator button {
+  margin-top: 10px;
+  background-color: #0077cc;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.BMI-Calculator button:hover {
+  background-color: #005fa3;
+}
+
+.BMI-Calculator .result {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #222;
+  font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <section class="BMI-Calculator">
+  <form class="container" id="bmicontainer">
+    <h2>BMI Calculator</h2>
+    <input type="number" id="weight" placeholder="Weight in kg"/>
+    <br>
+    <input type="number" id="height" placeholder="Height in cm"/>
+    <br />
+    <button onclick="calculateBMI()">Calculate</button>
+    <!-- <div class="result" id="result"></div> -->
+    <div class="result" id="result"></div>
+  </form>
+  <div class="result" id="result"></div>
+</section>
+<script src="bmi.js"></script>
+</body>
+</html>
